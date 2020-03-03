@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAGIS - Сontacts</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/icons.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+  <script defer type="text/javascript" src="./assets/js/map.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="navigation_bar">
+        <div class="navigation_bar-logo">
+          <a href="./index.html" class="navigation_bar-logo link"><img src="./assets/images/Logo.svg" alt="Logo"></a>
+        </div>
+        <div class="navigation_bar-items">
+          <ul>
+            <li class="navigation_bar-item">
+              <a href="./index.html" class="navigation_bar-link">Главная</a>
+            </li>
+            <li class="navigation_bar-item">
+              <a href="./about.html" class="navigation_bar-link">О нас</a>
+            </li>
+            <li class="navigation_bar-item">
+              <a href="./career.html" class="navigation_bar-link">Вакансии</a>
+            </li>
+            <li class="navigation_bar-item">
+              <a href="./contacts.html" class="navigation_bar-link current">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="page_title">
+        <div class="page_title-text">
+          <span>Контакты</span>
+        </div>
+      </div>
+      <div class="contact_feedback">
+        <form class="contact_feedback-form" action="POST">
+          <input class="contact_feedback-form-email" type="email" name="email" placeholder="Ваш e-mail.." required>
+          <button class="btn contact_feedback-form-button" type="submit">
+            <span>Отправить</span>
+          </button>
+        </form>
+      </div>
+      <div class="contact_info">
+        <div id="contact_info-map">
+          <img src="./assets/images/kagis_geolocation.svg" alt="kagis">
+        </div>
+        <div class="contact_info-text">
+          <div class="contact_info-header">
+            <div class="row">
+              <div class="contact_info-header-phone">
+                <i class="icon telephone"></i>
+                <a href="tel:+77272588180">+7 (727) 258 81 80</a>
+              </div>
+              <div class="contact_info-header-mail">
+                <i class="icon mail"></i>
+                <a href="mailto:team@kagis.kz">team@kagis.kz</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact_info-subtext">
+            <span>
+              ТОО «Казахстанское агентство ГИС и ДЗ» <br/>
+              Республика Казахстан, г. Алматы, ул.М.Зверева 47 <br/>
+              РНН 600 900 613 614 <br/>
+              ИИК KZ20826A1KZTD2003788 <br/>
+              БИК ALMNKZKA <br/>
+              БИН 081040012416 <br/>
+              АО АТФ Банк г. Алматы <br/>
+              Почтовый адрес: 050009 г. Алматы, пр. Абая 151/115, БЦ "Алатау", офис 1301
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-text">
+        <span>Copyright © KAGIS 2008-2019</span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+i.icon {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  fill: transparent !important;
+  display: inline-block;
+}
+
+i.icon.telegram {
+  width: 23px;
+  height: 21px;
+  margin-right: 9px;
+  background: url('../icons/telegram.svg') !important;
+}
+
+i.icon.arrow-right {
+  width: 20px;
+  height: 17px;
+  margin-left: 17px;
+  background: url('../icons/arrow_right.svg') !important;
+}
+
+i.icon.telephone {
+  width: 22px;
+  height: 22px;
+  margin-right: 11px;
+  background: url('../icons/telephone.svg') !important;
+}
+
+i.icon.mail {
+  width: 23px;
+  height: 23px;
+  margin-right: 9px;
+  background: url('../icons/mail.svg') !important;
+}

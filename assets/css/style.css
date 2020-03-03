@@ -1,0 +1,692 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: #FFFFFF;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+dl, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1366px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* ================================================= HEADER ================================================= */
+
+.navigation_bar {
+  min-height: 80px;
+  max-height: 80px;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555555;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation_bar-items {
+  position: relative;
+  margin-left: auto;
+}
+
+.navigation_bar-items>ul {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navigation_bar-link {
+  position: relative;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navigation_bar-item:last-child>.navigation_bar-link {
+  margin-right: 0;
+}
+
+.navigation_bar-link.current {
+  font-weight: bold;
+}
+
+.navigation_bar-logo {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+}
+
+.navigation_bar-logo.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================= HEADER ================================================= */
+
+/* ================================================= MAIN ================================================= */
+
+.geoinformation_solution {
+  display: flex;
+  position: relative;
+  margin-top: 80px;
+}
+
+.geoinformation_solution-text {
+  flex-direction: column;
+}
+
+.geoinformation_solution-subtext {
+  width: 457px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #555555;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact_link {
+  width: 180px;
+  height: 50px;
+  background: #FFCD10;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_link:hover, .contact_link:active {
+  background: rgb(255, 208, 39);
+}
+
+.geoinformation_solution-map {
+  position: absolute;
+  top: 22px;
+  right: 0;
+}
+
+.main_cards {
+  display: flex;
+  margin-top: 160px;
+}
+
+.main_card {
+  width: 352px;
+  height: 372px;
+  border: 1px solid #D7D7D7;
+  background: #FFFFFF;
+}
+
+.main_card-image {
+  margin: auto;
+  display: flex;
+  height: 156px;
+}
+
+.main_card-image>img {
+  margin: auto;
+}
+
+.main_card-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #555555;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_card-text {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #555555;
+  margin: 9px auto 0;
+  width: 262px;
+  height: 43px;
+}
+
+.main_card-link {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  margin: 40px auto 50px;
+  justify-content: center;
+  align-items: center;
+  background: #F0F0F0;
+  border: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555555;
+}
+
+.main_card-link:hover, .main_card-link:active {
+  background: rgb(219, 219, 219);
+  transition: all 0.1s;
+}
+
+/* ================================================= MAIN ================================================= */
+
+/* ================================================= ABOUT ================================================= */
+
+.page_title {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.page_title-text {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #555555;
+}
+
+.geodata_digitalization {
+  margin-top: 60px;
+  display: flex;
+}
+
+.geodata_digitalization-text {
+  flex-direction: column;
+  margin-left: 92px;
+}
+
+.geodata_digitalization-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #555555;
+}
+
+.geodata_digitalization-subtext {
+  width: 433px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #555555;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  word-wrap: normal;
+}
+
+.geodata_digitalization-image {
+  margin-right: 46px;
+}
+
+.about_info {
+  margin: 147px auto;
+  display: flex;
+}
+
+.about_cards {
+  display: flex;
+  height: 334px;
+  background: url('../images/dashed_arrows.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-items: center;
+  padding-top: 24px;
+  margin: auto;
+}
+
+.about_card {
+  width: 253px;
+  height: 181px;
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.about_card:first-child {
+  margin-left: 0;
+}
+
+.about_card:last-child {
+  margin-right: 0;
+}
+
+.about_card:nth-child(1n) {
+  margin-bottom: 98px;
+}
+
+.about_card:nth-child(even) {
+  margin-top: 137px;
+}
+
+.about_card-image {
+  margin: auto auto auto 30px;
+  display: flex;
+  height: 88px;
+}
+
+.about_card-image>img {
+  margin: auto;
+}
+
+.about_card-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  color: #555555;
+  margin-left: 30px;
+}
+
+.about_card-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+  margin: 10px auto 30px 30px;
+  width: 211px;
+  height: 37px;
+}
+
+.about_slider {
+  margin-top: 60px;
+  display: flex;
+}
+
+.about_slider-text {
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.about_slider-title {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #555555;
+}
+
+.about_slider-subtext {
+  width: 460px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #555555;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  word-wrap: normal;
+}
+
+.about_slider-image {
+  margin-right: 80px;
+}
+
+.about_slider-controls {
+  display: inline-flex;
+}
+
+.about_slider-control {
+  outline: none;
+  border: none;
+  fill: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.about_slider-control.arrow-left {
+  margin-right: 13px;
+}
+
+.about_slider-control.arrow-right {
+  margin-left: 13px;
+}
+
+/* ================================================= ABOUT ================================================= */
+
+/* ================================================= CAREER ================================================= */
+
+.job_openings {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job_opening_card {
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  margin: 10px auto;
+  height: 125px;
+  align-items: center;
+  max-width: 1120px;
+}
+
+.job_opening_card-image {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 31px;
+  margin-right: 55px;
+}
+
+.job_openings_card-image>img {
+  min-width: 42px;
+}
+
+.job_opening_card_block {
+  margin: 28px 50px 28px 50px;
+  overflow: hidden;
+}
+
+.job_opening_card_block-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #555555;
+  margin-bottom: 6.5px;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.job_opening_card_block-subtext {
+  word-break: normal;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BCBCBC;
+  margin-top: 6.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 205px;
+  min-height: 33px;
+}
+
+.job_opening_card_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  background: #F0F0F0;
+  height: 36px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  padding: 8px 20px 9px;
+  margin-right: 30px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection_process-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 70px auto 60px;
+}
+
+.selection_process-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #555555;
+}
+
+.selection_process-image {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.selection_process_step {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 211px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.selection_process_step-image {
+  margin-bottom: 15px;
+}
+
+.selection_process_step-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.selection_process_step-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #555555;
+  margin-top: 5px;
+}
+
+/* ================================================= CAREER ================================================= */
+
+/* ================================================= CONTACT ================================================= */
+
+.contact_feedback {
+  display: flex;
+  margin: 80px 0 60px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_feedback-form {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+}
+
+.contact_feedback-form-email {
+  width: 334px;
+  height: 50px;
+  border: 1px solid #D7D7D7;
+  margin-right: 10px;
+  padding: 0;
+  outline: none;
+  padding: 14px 0 14px 21px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555555;
+}
+
+.contact_feedback-form-button {
+  width: 144px;
+  background: #00AAFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.contact_info {
+  display: flex;
+}
+
+.contact_info-text {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info-header {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555555;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.contact_info-header-phone {
+  display: inline-flex;
+  margin-right: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_info-header-phone>a {
+  color: #555555;
+}
+
+.contact_info-header-mail {
+  display: inline-flex;
+  margin-left: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_info-header-mail>a {
+  color: #555555;
+}
+
+.contact_info-subtext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #555555;
+  margin-top: 16px;
+}
+
+#contact_info-map {
+  width: 520px;
+  height: 320px;
+  background: #F9F9F9;
+  margin-right: 24px;
+}
+
+/* ================================================= CONTACT ================================================= */
+
+/* ================================================= FOOTER ================================================= */
+
+.footer {
+  display: flex;
+  margin: 80px 0 70px;
+  width: 100%;
+}
+
+.footer-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #555555;
+}
+
+.footer-link {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #01A8FB;
+  display: flex;
+}
+
+/* ================================================= FOOTER ================================================= */
+
+.test:hover {
+  fill: #4fc4ff;
+  transition: all 0.1s;
+}
